@@ -7,7 +7,7 @@ CSC 227.0002 Final Project
 // Imports
 const express = require('express')
 const app = express()
-const port = 5000
+const port = 8080
 
 // Static Files
 app.use(express.static('public'));
@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 
 // Navigation
 app.get('', (req, res) => {
-    res.render('index', { text: 'Hey' })
+    res.render('index', { text: 'Tip Calculations' })
 })
 
 app.listen(port, () => console.info(`App listening on port ${port}`))
