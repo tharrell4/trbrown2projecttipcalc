@@ -1,0 +1,47 @@
+<!--- 
+Tiffany Harrell
+CSC 227.0002 Final Project
+4/8/2022
+---> 
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+        <div id='container'>
+            <h1>Tip Calculator</h1>
+
+            <label>Enter Bill Total: $</label>
+            <input type="text" id="total" />
+            <br>            
+            <br>
+
+            <label>Enter Desired Tip: %</label>
+            <input type="text" id="tipPercent" />
+            <br>
+            <br>
+
+            <input type="button" value="Calculate" id="calculate" onclick="calculateTip()"/> <br/>            
+            
+            <p>&nbsp;</p>
+
+            <div id='tip'>
+                <label>Tip Amount:</label>
+                <input type="text" id="tipDue" disabled="disabled"/> <br/>
+            </div>
+
+            <br>
+            <div id='totalIncTip'>
+                <label>Total Due Including Tip:</label>
+                <input type="text" id="tipIncTotal" disabled="disabled"/> <br/>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
